@@ -1,0 +1,32 @@
+#main {
+    display: flex;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: column;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 640px;
+    width: 640px;
+    height: 640px;
+    border: solid black 1px;
+    justify-content: stretch;
+}
+
+#colorSelector {
+    width:100%;
+}
+
+row {
+    display: flex;
+    justify-content: stretch;
+    flex: 1;
+}
+
+pixel {
+    flex: 1;
+}

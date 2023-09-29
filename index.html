@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pix-A-Pics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Pix-A-Pics</header>
+    <div id="main">
+        <div id="toolbar">
+            <div>Selected color:</div>
+            <input type="color" id="colorSelector">
+            <button class="brush" id="color">Color</button>
+            <button class="brush" id="darken">Darken</button>
+            <button class="brush" id="lighten">Lighten</button>
+            <button class="brush" id="rainbow">Rainbow</button>
+            <div id="boardSizeLabel">Size: 16x16</div>
+            <input id="boardSize" type="range" min="16" max="64">
+            <button id="changeBoardSize">Generate</button>
+        </div>
+        <div id="board"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
