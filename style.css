@@ -1,5 +1,19 @@
+@font-face {
+    font-family: pixelised;
+    src:url('fonts/8-bit Arcade Out.ttf');
+   }
+
+@font-face {
+    font-family: menutext;
+    src: url('fonts/8-bit Arcade In.ttf');
+}
+
 #main {
     display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-end;
 }
 
 #toolbar {
@@ -13,12 +27,19 @@
     flex: 0 0 640px;
     width: 640px;
     height: 640px;
-    border: solid black 1px;
+    border: solid black 2px;
     justify-content: stretch;
 }
 
+#boardColor,
 #colorSelector {
     width:100%;
+}
+
+#toolbar,
+span {
+    display:flex;
+    flex:0 0 300px;
 }
 
 row {
@@ -29,4 +50,59 @@ row {
 
 pixel {
     flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* box-sizing: content-box; */
+    margin:0px;
+    height: 100vh;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    padding: 0px 0 0px 0;
+    font-size: 200px;
+    font-family: pixelised;
+}
+
+footer {
+    text-align: right;
+    padding: 5px 5px 5px 5px;
+    font-family: monospace;
+}
+
+.menuText {
+    display: flex;
+    height: 50px;
+    align-items: end;
+    font-size: 50px;
+    font-family: menutext;
+}
+
+button {
+    font-family: menutext;
+    font-size: 40px;
+    height: 50px;
+    padding: 0px 0 5px 0;
+    background-color: rgba(0,0,0,0);
+}
+
+input {
+    height: 50px;
+    background-color: rgba(0,0,0,0);
+    accent-color: black;
+}
+
+block {
+    position: fixed;
+    z-index: -1;
+}
+
+.highlighted {
+    background-color: black;
+    color:white;
 }

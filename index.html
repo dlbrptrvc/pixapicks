@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pix-A-Pics</title>
+    <title>Pix-a-Pics</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icons8-pixel-heart-32.png">
 </head>
-<body>
-    <header>Pix-A-Pics</header>
+<body id="body">
+    <header>Pix-a-Pics</header>
     <div id="main">
         <div id="toolbar">
-            <div>Selected color:</div>
+            <div class="menuText">Color</div>
             <input type="color" id="colorSelector">
-            <button class="brush" id="color">Color</button>
+            <div class="menuText">Brush type</div>
+            <button class="brush highlighted" id="color">Color</button>
             <button class="brush" id="darken">Darken</button>
             <button class="brush" id="lighten">Lighten</button>
             <button class="brush" id="rainbow">Rainbow</button>
-            <div id="boardSizeLabel">Size: 16x16</div>
+            <div class="menuText">Board color</div>
+            <input type="color" id="boardColor">
+            <div class="menuText" id="boardSizeLabel">Size 16x16</div>
             <input id="boardSize" type="range" min="16" max="64">
             <button id="changeBoardSize">Generate</button>
         </div>
         <div id="board"></div>
+        <span></span>
     </div>
+    <footer>Copyright&copy dlbrptrvc 
+        <script>
+            document.write(new Date().getFullYear())
+          </script>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
